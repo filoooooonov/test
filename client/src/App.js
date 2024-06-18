@@ -6,7 +6,7 @@ function App() {
 
   function fetchData(data) {
     console.log(data)
-    fetch('http://localhost:5000/api', {
+    fetch('https://test-ruokaserver.vercel.app/api', {
       method: "POST",
       headers: {
         'Content-Type': 'application/json',
