@@ -13,7 +13,7 @@ app.use(express.json())
 app.post('/api', (req, res) => {
     console.log('body', req.body)
     const body = req.body.data
-    res.send({data: body.toLowerCase()})
+    res.send({data: body})
 })
 
 app.listen(PORT, (error) =>{
