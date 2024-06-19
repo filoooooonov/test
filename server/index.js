@@ -9,14 +9,6 @@ const PORT = 5000;
 app.use(express.json())
 
 
-module.exports = (req, res) => {
-    //set header first to allow request or origin domain (value can be different)
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-    res.setHeader('Access-Control-Allow-Credentials', true);
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, OPTIONS, DELETE');
-
-//---- other code
 
 
 app.post('/api', (req, res) => {
@@ -36,10 +28,10 @@ app.listen(PORT, (error) =>{
 );
 
  //Preflight CORS handler
- if(req.method === 'OPTIONS') {
-    return res.status(200).json(({
-        body: "OK"
-    }))
-}
+//  if(req.method === 'OPTIONS') {
+//     return res.status(200).json(({
+//         body: "OK"
+//     }))
+// }
 
-}
+// }
