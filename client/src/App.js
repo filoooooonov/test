@@ -2,7 +2,7 @@ import './App.css';
 
 function App() {
 
-  const data = 'SOME DATA'
+  const data = 'SOME DAT'
 
   function fetchData(data) {
     console.log(data)
