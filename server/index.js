@@ -22,6 +22,7 @@ module.exports = (req, res) => {
 app.post('/api', (req, res) => {
     console.log('body', req.body)
     const body = req.body.data
+    res.status(200)
     res.send({data: body.toLowerCase()})
     
 })
